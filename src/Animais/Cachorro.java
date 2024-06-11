@@ -8,7 +8,6 @@ public class Cachorro extends Animal {
 
 
   //construtores
-
   public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
     super(nome, cor, peso);
     this.nome = nome;
@@ -17,20 +16,48 @@ public class Cachorro extends Animal {
     this.peso = peso;
     this.tamanhoDoRabo = tamanhoDoRabo;
     this.estadoDeEspirito = estadoDeEspirito;
-
     numeroDeCachorros++;
   }
 
   //metodos
-
-
   public static int getNumeroDeCachorros() {
     return numeroDeCachorros;
   }
+
   public static void setNumeroDeCachorros(int numeroDeCachorros) {
     Cachorro.numeroDeCachorros = numeroDeCachorros;
   }
 
+  public int getAltura() {
+    return altura;
+  }
+
+  public void setAltura(int altura) {
+    this.altura = altura;
+  }
+
+  public String getNome() {
+    return this.nome;
+  }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+
+  public String getCor() {
+    return cor;
+  }
+
+  public void setCor(String cor) {
+    this.cor = cor;
+  }
+
+  public double getPeso() {
+    return peso;
+  }
+
+  public void setPeso(double peso) {
+    this.peso = peso;
+  }
 
   public int getTamanhoDoRabo() {
     return tamanhoDoRabo;
@@ -39,7 +66,6 @@ public class Cachorro extends Animal {
   public void setTamanhoDoRabo(int tamanhoDoRabo) {
     this.tamanhoDoRabo = tamanhoDoRabo;
   }
-
 
   public String pegar(){
     return "Bolinha";
